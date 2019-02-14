@@ -1,6 +1,6 @@
 This module allows you to integrate payment acceptance using `"CLICK"` payment system into `Python Django` web applications.
 Click-API module is integrated to `django-payments` module as payment provider.
-Detailed documentation is available here `https://docs.click.uz`.
+Detailed documentation is available here __https://docs.click.uz__.
 
 #### Installing
 ```
