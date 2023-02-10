@@ -7,7 +7,7 @@ Detailed documentation is available here __https://docs.click.uz__.
 $ pip install django-payments
 $ pip install click.tar.gz
 ```
-#### Add `"payments"` and `"click"` to your `INSTALLED_APPS` setting like this::
+#### Add `"payments"` and `"click"` to your `INSTALLED_APPS` setting like this:
 
 ```python
 INSTALLED_APPS = [
@@ -17,7 +17,7 @@ INSTALLED_APPS = [
     ...
 ]
 ```
-#### Add the variables to your `settings.py` like this::
+#### Add the variables to your `settings.py` like this:
 ```python
 PAYMENT_HOST = '<your_ip_address>:<your_port>'
 PAYMENT_USES_SSL = False # set the True value if you are using the SSL
@@ -36,7 +36,7 @@ PAYMENT_VARIANTS = {
 }
 ```
 
-#### Include the click and payments `URLconf` in your project `urls.py` like this::
+#### Include the click and payments `URLconf` in your project `urls.py` like this:
 ```python
 path('payments/', include('payments.urls'))
 path('payments/', include('click.urls'))
@@ -49,7 +49,7 @@ class Payment(BasePayment):
     pass
 ```
 
-#### Add the model to your `admin.py` like this::
+#### Add the model to your `admin.py` like this:
 ```python
 from django.contrib import admin
 from .models import Payment
@@ -61,7 +61,7 @@ admin.site.register(Payment, PaymentAdmin)
 ```
 #### Run `python manage.py migrate` to create the payment and your other models.
 #### Start the development server and visit `http://127.0.0.1:8000/admin/` to create a payment.
-#### Click service urls as pattern : `payments/process/click/service/<service_type>` :
+#### Click service urls as pattern : `payments/process/click/service/<service_type>`:
 #### Service types
 ```
 1) create_invoice
